@@ -6,6 +6,7 @@ export type ResetPasswordTokenDTO = {
 
 export interface ResetPasswordTokenRepository {
     create(data: ResetPasswordTokenDTO): Promise<void>
-    find(token: string): Promise<ResetPasswordTokenDTO | null>
+    findByToken(token: string): Promise<ResetPasswordTokenDTO | null>
+    findByUserId(id: string): Promise<ResetPasswordTokenDTO | null>
     delete(token: string): Promise<void>
 }

@@ -37,6 +37,16 @@ Or
 yarn dev
 ```
 
+Run tests:
+
+```sh
+npm test
+```
+Or 
+```sh
+yarn test
+```
+
 ## :soon: Suggestions for future implementations
 - use redis to save recovery password token
 - Enhance email body template

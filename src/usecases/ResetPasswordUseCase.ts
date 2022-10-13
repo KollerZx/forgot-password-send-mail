@@ -11,7 +11,7 @@ export class ResetPasswordUseCase {
         private dateProvider: DateProvider
     ) { }
     async execute({ token, password }: ResetPasswordRequest) {
-        const userToken = await this.resetPasswordTokenRepository.find(token)
+        const userToken = await this.resetPasswordTokenRepository.findByToken(token)
 
         if (!userToken) throw new Error("Invalid Token!")
 
