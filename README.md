@@ -49,7 +49,7 @@ yarn test
 
 ## :soon: Suggestions for future implementations
 - use redis to save recovery password token
-- Enhance email body template
+- Improve email body template
 
 ## :handshake: Collaborators
 <table>
